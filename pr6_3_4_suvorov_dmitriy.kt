@@ -7,6 +7,7 @@ fun main(){
         var c = readLine()!!.toInt()
         var d = readLine()!!.toInt()
         when {
+            a<=0||b<=0||c<=0||d<=0 -> ("<0 Введите другое число")
             a <= c && b <= d -> println("Первый конверт войдет во второй")
             a >= c && b >= d -> println("Второй конверт войдет в первый")
             else -> println("Конверт не войдет в другой")

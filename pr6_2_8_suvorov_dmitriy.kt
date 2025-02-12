@@ -14,7 +14,8 @@ fun main(){
         num3 = num % 10
         rez = num1 * num2 * num3
         when {
-            num < 100 && num > 999 -> println("Неверное число")
+            num <=0 -> println("<0 Введите другое число")
+            num < 100 && num < 999 -> println("Неверное число")
             rez % num == 0 -> println("Произведение его цифр кратно числу А")
             else -> println("Произведение его цифр некратно числу А")
         }
